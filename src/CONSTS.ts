@@ -204,7 +204,7 @@ export const frameworksTechs: Tech[] = [
     },
 ]
 
-
+export const curriculo = "https://keen-gaufre-733f26.netlify.app/"
 export const yourIntroduction = `Sérgio Machado de Lima Filho, 19 anos, curso Análise e Desenvolvimento de Sistemas na FAETERJ Rio (3° período) e sou voluntário no Instituto Carioca de Cão Guia.`
 export const yourDescription =  `Programo há mais de 2 anos, focado principalmente em Android e C++.
                                     Também tenho experiência sólida com React, Spring Boot, Java,

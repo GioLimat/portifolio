@@ -10,7 +10,7 @@ import {
     NavigationMenuTrigger,
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import {frameworksTechs, programmingLanguages} from "@/CONSTS.ts";
+import {curriculo, frameworksTechs, programmingLanguages} from "@/CONSTS.ts";
 import {ChevronDown, Columns2, X} from "lucide-react";
 import {useEffect, useState} from "react";
 import {AnimatePresence} from "framer-motion";
@@ -193,7 +193,9 @@ function AppSidebar() {
                             window.location.hash = "#/projects";
                         } }/>
 
-                        <SidebarItem name="Currículo"/>
+                        <SidebarItem onClick={()=>{
+                            window.open(curriculo, '_blank');
+                        }} name="Currículo"/>
 
                     </motion.aside></>
                 )}
@@ -272,7 +274,7 @@ export default function Header() {
                     </NavigationMenuItem>
                     <NavigationMenuItem>
 
-                        <NavigationMenuLink  href="" className={navigationMenuTriggerStyle()}>
+                        <NavigationMenuLink  href={curriculo} className={navigationMenuTriggerStyle()}>
                             Currículo
                         </NavigationMenuLink>
 

@@ -56,7 +56,7 @@ export function ProjectsCarousel({ projects, length = 1 }: ProjectsCarouselProps
                                             .toLowerCase()
                                             .replace(/\s+/g, "-")}`
                                     }}
-                                    className={`p-0 lg:p-6`}
+                                    className={`p-0 lg:p-6 h-full`}
                                 >
                                     <ProjectCard project={project} />
                                 </Card>
